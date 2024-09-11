@@ -1,0 +1,1 @@
+include ':app', ':simple-xml-2.7.1', ':xpp3-1.1.3.3', ':stax-1.2.0', ':stax-api-1.0.1'

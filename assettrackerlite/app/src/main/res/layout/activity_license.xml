@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2d2d2d"
+    android:keepScreenOn="true" >
+
+    <!-- Header -->
+    <LinearLayout style="@style/TitleBar">
+
+        <ImageView
+            style="@style/TitleIcon"
+            android:src="@drawable/arrow_left"
+            android:layout_marginLeft="12dp"
+            android:onClick="onBackButton"
+            />
+
+        <TextView
+            style="@style/Title"
+            android:text="@string/title_activity_license"
+            android:layout_marginRight="36dp"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:id="@+id/scroll" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"
+            android:background="#fff"
+            android:id="@+id/about"
+            />
+    </ScrollView>
+
+</LinearLayout>

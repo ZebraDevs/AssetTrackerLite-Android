@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:layout="@layout/custom_title"/>
+    <PreferenceCategory
+        android:key="connection_preferencescreen"
+        android:title="Connection"
+        android:summary="Connection Settings"
+        android:icon="@android:drawable/ic_menu_upload">
+
+        <ListPreference android:title="Server Type"
+            android:key="serverType"
+            android:summary="Tap to select FTPS."
+            android:defaultValue="FTPS"
+            android:entries="@array/serverArray"
+            android:entryValues="@array/serverArray"/>
+
+        <EditTextPreference android:title="@string/serverTitle"
+            android:key="server"
+            android:summary="Server"/>
+
+        <EditTextPreference android:title="@string/userNameTitle"
+            android:key="username"
+            android:summary="Username"/>
+
+        <EditTextPreference android:title="@string/passwordTitle"
+            android:key="password"
+            android:summary="Password"
+            android:password="true"
+            android:inputType="textPassword"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="application_preferencescreen"
+        android:title="@string/applicationTitle"
+        android:summary="Application Settings"
+        android:icon="@android:drawable/ic_menu_preferences">
+        <Preference android:title="@string/areaListTitle"
+            android:key="arealist"
+            android:summary="Edit area list"/>
+        <Preference android:title="Reset DataWedge Profile"
+            android:key="dwATLReset"
+            android:summary="Reset DataWedge Profile for AssetTrackerLite"/>
+        <CheckBoxPreference
+            android:key="sendresults"
+            android:title="@string/sendOnSaveTitle"
+            android:summary="Automatically send session data to server"/>
+        <CheckBoxPreference
+            android:key="autoImport"
+            android:title="Auto Import on Startup"
+            android:summary="Automatically import inventory file on startup"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/fileOptionTitle"
+        android:key="fileoptions"
+        android:summary="File Option Settings"
+        android:icon="@android:drawable/ic_menu_edit">
+
+        <Preference android:title="Remove Session files"
+            android:key="fileClean"
+            android:summary="Tap to select files to delete"/>
+
+        <ListPreference     android:title="@string/formatTitle"
+            android:summary="Format of Session Data output file"
+            android:key="outputformat"
+            android:defaultValue="CSV"
+            android:entries="@array/listArray"
+            android:entryValues="@array/listValues" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Database Settings">
+        <Preference android:title="Import Product Database"
+            android:key="importfile"
+            android:summary="Tap to select import file"/>
+
+        <Preference android:title="@string/exportTitle"
+            android:key="exportDatabase"
+            android:summary="Tap to export product database"/>
+        <CheckBoxPreference
+            android:key="inventorygrouping"
+            android:title="@string/groupingTitle"
+            android:summary="Enable item grouping for inventory format" />
+        <ListPreference android:title="Database Import Type"
+            android:key="importType"
+            android:summary="Tap to select if need to do clean import or modify existing database"
+            android:defaultValue="Clean Import(Delete Existing)"
+            android:entries="@array/importType"
+            android:entryValues="@array/importType"/>
+    </PreferenceCategory>
+</PreferenceScreen>

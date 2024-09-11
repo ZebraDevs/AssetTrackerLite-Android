@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 33
+    buildToolsVersion '30.0.3'
+    defaultConfig {
+        applicationId "com.zebra.assettrackerlite"
+        minSdkVersion 26
+        targetSdkVersion 33
+        versionCode 8
+        versionName "2.00"
+        lintOptions {
+            disable 'MissingTranslation'
+            abortOnError false
+        }
+        resConfigs "en", "fr", "es"
+        //signingConfig signingConfigs.debug
+    }
+    signingConfigs {
+        Release {
+          /*  storeFile file('SES_releasekey.keystore')
+            storePassword 'Android'
+            keyAlias 'alias_name'
+            keyPassword 'Android'*/
+        }
+
+        Debug {
+            storeFile file('SES_releasekey.keystore')
+            storePassword 'Android'
+            keyAlias 'alias_name'
+            keyPassword 'Android'
+        }
+        useLibrary 'org.apache.http.legacy'
+    }
+
+    buildTypes {
+        release {
+            //signingConfig signingConfigs.Release
+            minifyEnabled false
+            shrinkResources false
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            /*android.applicationVariants.all { variant ->
+                variant.outputs.all { output ->
+                    if (variant.variantData. variantConfiguration.buildType.name == "release")
+                        outputFileName = "AssetTrackerLite.apk"
+                }
+            }*/
+        }
+        debug {
+            //signingConfig signingConfigs.Debugclasspath
+            versionNameSuffix " - Debug"
+            jniDebuggable true
+            debuggable true
+        }
+    }
+    //sourceSets { main { res.srcDirs = ['src/main/res', 'src/main/res/values-es'] } }
+}
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation files('libs/ZebraSecurityAuth-2.1.aar')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:25.4.0'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:25.3.1'
+    implementation 'commons-net:commons-net:3.6'
+   // implementation project(':simple-xml-2.7.1')
+   }

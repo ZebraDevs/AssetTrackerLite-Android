@@ -1,0 +1,21 @@
+<resources>
+    <string-array name="listArray">
+        <item>CSV</item>
+        <item>XML</item>
+    </string-array>
+
+    <string-array name="listValues">
+        <item>CSV</item>
+        <item>XML</item>
+    </string-array>
+
+    <string-array name="serverArray">
+        <item>FTPS</item>
+    </string-array>
+
+    <string-array name="importType">
+        <item>Clean Import(Delete Existing)</item>
+        <item>Update/Add to Existing</item>
+    </string-array>
+
+</resources>

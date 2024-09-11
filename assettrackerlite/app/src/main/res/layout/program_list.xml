@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/descTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="TextView"
+        android:textColor="#000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+
+        <TextView
+
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="@string/barcode_string"
+            android:textColor="#0077a0"/>
+        <TextView
+            android:id="@+id/barcodeTextView"
+            android:layout_gravity="center"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="Barcode" android:layout_weight="50"
+            android:textColor="#000"/>
+        <TextView
+
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="@string/price_string"
+            android:textColor="#0077a0"/>
+        <TextView
+            android:id="@+id/priceTextView"
+            android:layout_gravity="center"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="price"
+            android:layout_weight="25"
+            android:textColor="#000"/>
+        <TextView
+
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="@string/quantity"
+            android:textColor="#0077a0"/>
+        <TextView
+            android:id="@+id/qtyTextView"
+            android:layout_gravity="center"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="qty"
+            android:layout_weight="20"
+            android:textColor="#000"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

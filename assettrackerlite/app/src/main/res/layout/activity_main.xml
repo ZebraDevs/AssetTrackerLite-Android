@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.symbol.assettrackerlite.MainActivity"
+    android:background="#2d2d2d">
+
+
+    <!-- Header -->
+    <LinearLayout style="@style/TitleBar">
+
+        <ImageView
+            style="@style/TitleIcon"
+            android:src="@drawable/ic_close"
+            android:layout_marginLeft="12dp"
+            android:onClick="onBackButton"
+            />
+
+        <TextView
+            style="@style/Title"
+            android:text="@string/app_name"
+            />
+
+        <ImageView
+            android:id="@+id/menu"
+            style="@style/TitleIcon"
+            android:layout_marginRight="12dp"
+            android:onClick="displayMenu"
+            android:src="@drawable/ic_menu" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#f5f5f5"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+    <TextView
+        android:text="@string/identifier_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:textSize="12dp"
+        android:id="@+id/textView"
+        android:textColor="#0077a0"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        />
+
+    <EditText class="com.symbol.assettrackerlite.MainActivity.CustomEditTextNormal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_above="@+id/spinner"
+        android:id="@+id/editText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="@string/employeehint_string"
+        android:backgroundTint="#0077a0"
+        android:textColor="#000"
+        android:textSize="14dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textCursorDrawable="@null"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bdbdbd"/>
+        <TextView
+            android:text="@string/location_string"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editText"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView2"
+            android:textColor="#0077a0"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="14dp"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:padding="0dp"
+        android:id="@+id/spinner"/>
+    </LinearLayout>
+    <Button
+        android:text="@string/start_string"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:gravity="left|center_vertical"
+        android:id="@+id/button"
+        android:background="#0077a0"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"/>
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="invisible"/>
+
+
+
+</LinearLayout>

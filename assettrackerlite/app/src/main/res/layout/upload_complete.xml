@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="#0077a0"
+        android:textColor="#ffff"
+        android:text="@string/upload_complete"/>
+
+    <TextView
+        android:id="@+id/uploadCompleteMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:background="#ffff"
+        android:textColor="#0077a0"
+        />
+
+    <Button
+        android:id="@+id/dialogButtonOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="8dp"
+        android:background="#fff"
+        android:textColor="#0077a0"
+        android:text="@string/submit"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

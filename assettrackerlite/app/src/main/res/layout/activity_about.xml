@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2d2d2d"
+    android:keepScreenOn="true" >
+
+    <!-- Header -->
+    <LinearLayout style="@style/TitleBar">
+
+        <ImageView
+            style="@style/TitleIcon"
+            android:src="@drawable/arrow_left"
+            android:layout_marginLeft="12dp"
+            android:onClick="onBackButton"
+            />
+
+        <TextView
+            style="@style/Title"
+            android:text="@string/about_string"
+            android:layout_marginRight="36dp"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/version"
+        android:textColor="#fff"
+        android:padding="5dp"
+        android:layout_margin="8dp"/>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AssetTrackerLite</string>
+    <string name="start_string">Commencer</string>
+    <string name="identifier_string">Identificateur: </string>
+    <string name="location_string">Emplacement: </string>
+    <string name="settings_string">Paramètres</string>
+    <string name="uploaddata_string">Télécharger les données</string>
+    <string name="license_agreement">accord de licence</string>
+    <string name="about_string">Sur</string>
+    <string name="exit_string">Sortie</string>
+    <string name="employeehint_string">ex. - ID d’employé, nom </string>
+    <string name="title_activity_license">Accord de licence</string>
+    <string name="file_not_created">Mémoire insuffisante, fichier non enregistré</string>
+    <string name="assetinformation_string">Informations sur l\'actif</string>
+    <string name="barcode_string">Code à barre:</string>
+    <string name="value_string">Valeur:</string>
+    <string name="units_string">Unités par balayage:</string>
+    <string name="description_string">La description:</string>
+    <string name="scannedassets_string">Actifs numérisés</string>
+    <string name="price_string">Prix:</string>
+    <string name="totalvalue_string">Valeur totale:</string>
+    <string name="totalunits_string">Unités totales:</string>
+    <string name="stop_string">Arrêtez</string>
+    <string name="finish_string">Finir</string>
+    <string name="wanttosave_string">Voulez-vous enregistrer cette session d\'inventaire?</string>
+    <string name="cancel_string">Annuler</string>
+    <string name="no_string">Non</string>
+    <string name="yes_string">Oui</string>
+    <string name="upload_string">Télécharger</string>
+    <string name="addData_string">Ajouter/Modifier une référence</string>
+    <string name="sessiondata_string">Fichiers de données de session</string>
+    <string name="title_activity_add_modify_items">Ajouter / Modifier une référence</string>
+    <string name="title_activity_add_modify_data">Ajouter des données de modification</string>
+    <string name="addModifyInstructions_string">Numériser un code à barres nouveau ou existant pour démarrer</string>
+    <string name="saveButton_string">Sauvegarder</string>
+    <string name="deleteButton_string">Rayer</string>
+    <string name="cancelButton_string">Annuler</string>
+    <string name="clearButton_string">Clair</string>
+    <string name="printButton_string">Imprimer</string>
+    <string name="addModifySKU_title">Ajouter / Modifier une référence</string>
+    <string name="barcodePlaceholder">Numériser ou entrer une référence</string>
+    <string name="addModifyInstructions">Numériser ou entrer un SKU pour ajouter ou modifier un élément</string>
+    <string name="incompleteEntry">Veuillez spécifier le nombre d\'unités</string>
+
+    <string name="upload_complete">Message système</string>
+    <string name="submit">Approuvé</string>
+    <string name="quantity">Quantité:</string>
+
+    //Settings Menu
+    <string name="serverTitle">Serveur ftp</string>
+    <string name="userNameTitle">Nom d\'utilisateur</string>
+    <string name="passwordTitle">Mot de passe</string>
+    <string name="applicationTitle">App</string>
+    <string name="areaListTitle">Liste des zones</string>
+    <string name="groupingTitle">Activer le regroupement d\'éléments</string>
+    <string name="sendOnSaveTitle">Envoyer les résultats sur Enregistrer</string>
+    <string name="fileOptionTitle">Options de fichier</string>
+    <string name="importTitle">Base de données d\'importation</string>
+    <string name="exportTitle">Base de données sur les exportations</string>
+    <string name="formatTitle">Format de données de session</string>
+
+    //new item found dialog
+    <string name="dialogTitle">Alerte! Nouvel élément trouvé</string>
+    <string name="dialogTextViewMessage">Voulez-vous ajouter SKU à la base de données de produits?</string>
+
+
+</resources>

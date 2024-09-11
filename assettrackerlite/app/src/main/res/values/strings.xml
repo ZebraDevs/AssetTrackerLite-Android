@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AssetTrackerLite</string>
+    <string name="start_string">Start</string>
+    <string name="about_string">About</string>
+    <string name="license_agreement">License Agreement</string>
+    <string name="identifier_string">Identifier: </string>
+    <string name="location_string">Location: </string>
+    <string name="settings_string">Settings</string>
+    <string name="uploaddata_string">Upload Data</string>
+    <string name="exit_string">Exit</string>
+    <string name="title_activity_license">License Agreement</string>
+    <string name="employeehint_string">ex. - Employee ID, Name</string>
+    <string name="file_not_created">Insufficient Memory, File not Saved</string>
+    <string name="assetinformation_string">Scanned Asset</string>
+    <string name="barcode_string">Barcode: </string>
+    <string name="value_string">Value: </string>
+    <string name="units_string">Units Per Scan: </string>
+    <string name="description_string">Description: </string>
+    <string name="scannedassets_string">List of Scanned Assets</string>
+    <string name="price_string">Price: </string>
+    <string name="totalvalue_string">Total Value: </string>
+    <string name="totalunits_string">Total Units: </string>
+    <string name="stop_string">Stop</string>
+    <string name="finish_string">Finish</string>
+    <string name="wanttosave_string">Would you like to save this inventory session?</string>
+    <string name="cancel_string">Cancel</string>
+    <string name="no_string">No</string>
+    <string name="yes_string">Yes</string>
+    <string name="upload_string">Upload</string>
+    <string name="addData_string">Add/Modify SKU</string>
+    <string name="sessiondata_string">Session Data Files</string>
+    <string name="title_activity_add_modify_items">Add/Modify SKU</string>
+    <string name="title_activity_add_modify_data">AddModifyData</string>
+    <string name="addModifyInstructions_string">Scan New or Existing Barcode to Start</string>
+    <string name="saveButton_string">Save</string>
+    <string name="deleteButton_string">Delete</string>
+    <string name="cancelButton_string">Cancel</string>
+    <string name="clearButton_string">Clear</string>
+    <string name="printButton_string">Print</string>
+    <string name="addModifySKU_title">Add/Modify SKU</string>
+    <string name="barcodePlaceholder">Scan or Enter SKU</string>
+    <string name="addModifyInstructions">Scan or Enter a SKU to Add or Modify item</string>
+    <string name="incompleteEntry">Please Specify Number of Units</string>
+    <string name="upload_Error">Upload Failed: Server Error</string>
+
+
+    <string name="upload_complete">System Message</string>
+    <string name="submit">OK</string>
+    <string name="quantity">Qty:</string>
+
+    //Settings Menu
+    <string name="serverTitle">Server Url</string>
+    <string name="userNameTitle">Username</string>
+    <string name="passwordTitle">Password</string>
+    <string name="applicationTitle">Application</string>
+    <string name="areaListTitle">Area List</string>
+    <string name="areaListHint">Type to enter a new area</string>
+    <string name="groupingTitle">Enable Item Grouping</string>
+    <string name="sendOnSaveTitle">Send Results on Save</string>
+    <string name="fileOptionTitle">File Options</string>
+    <string name="importTitle">Import Product Database</string>
+    <string name="exportTitle">Export Product Database</string>
+    <string name="formatTitle">Session Data Format</string>
+
+    //new item found dialog
+    <string name="dialogTitle">Alert! New Item Found</string>
+    <string name="dialogTextViewMessage">Do you want to add SKU to Product Database</string>
+
+    <!-- Settings Strings -->
+    <string name="url">URL Host</string>
+    <string name="url_desc">The Server URL for hosting service</string>
+    <string name="login">Login Path</string>
+    <string name="login_desc">The Server path for login service</string>
+    <string name="configPath">Path for configuration file</string>
+    <string name="configPath_desc">Full pathname for configuration file</string>
+    <string name="legacy">Legacy Mode</string>
+    <string name="legacy_desc">Switch application to legacy mode</string>
+    <string name="feedback">Haptic Feedback</string>
+    <string name="feedback_desc">Allow haptic feedback</string>
+    <string name="debug">Debug Logging</string>
+    <string name="debug_desc">Output debug logging</string>
+
+    <!-- Popup Messages -->
+    <string name="warning_title">Attention</string>
+    <string name="warning_message">This application has been optimized for the Zebra TC21/26/15/22/27/20/25 and MC22/27. You may experience performance issues on other Zebra devices</string>
+    <string name="ok">OK</string>
+    <string name="Add">Add</string>
+    <string name="areaListEditTitle">Area List (tap on an area to edit).</string>
+    <string name="importFileTitle">File List (Tap on a file to select it to import).</string>
+    <string name="dontShowMessage">Don\'t show this again!</string>
+    <string name="dbFileListTitle">Database Files available</string>
+
+    <string name="decimalNumber">0123456789.</string>
+</resources>
+
